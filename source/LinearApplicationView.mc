@@ -40,6 +40,7 @@ class LinearApplicationView extends WatchUi.WatchFace
         var result = [];
         var maximumPriority = 0;
         var priority = 0;
+        var heuristics = [];
 
         // Collect and prioritise metrics
         for (var i = 0; i < _metrics.size(); i++)
@@ -47,7 +48,10 @@ class LinearApplicationView extends WatchUi.WatchFace
             // Add a new sample using the latest activity info.
             _metrics[i].addSample(activity);
 
-            priority = _metrics[i].getHeuristics().getLinearPrioritisation();
+
+            heuristics = _metrics[i].getHeuristicsAsArray();
+            priority = (heuristics[0] + heuristics[1] + heuristics[2]) * heuristics[3];
+
             queue.enqueue(_metrics[i], priority);
 
             if(maximumPriority < priority) { maximumPriority = priority; }

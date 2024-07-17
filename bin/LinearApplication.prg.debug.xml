@@ -35,10 +35,10 @@
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\fsm\\Strategy.mc" id="19" lineNum="62" parent="globals/Jacobs/ColumnsStrategy" pc="268436122" symbol="&lt;init&gt;"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\fsm\\Strategy.mc" id="19" lineNum="63" parent="globals/Jacobs/ColumnsStrategy" pc="268436176" symbol="&lt;init&gt;"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\fsm\\state.mc" id="20" lineNum="66" parent="globals/Jacobs/TwoMessagesState" pc="268436231" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="20" parent="globals/Jacobs/Metric" pc="268436250" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="27" parent="globals/Jacobs/Metric" pc="268436250" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="30" parent="globals/Jacobs/Metric" pc="268436294" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="31" parent="globals/Jacobs/Metric" pc="268436308" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="21" parent="globals/Jacobs/Metric" pc="268436250" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="28" parent="globals/Jacobs/Metric" pc="268436250" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="31" parent="globals/Jacobs/Metric" pc="268436294" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="21" lineNum="32" parent="globals/Jacobs/Metric" pc="268436308" symbol="&lt;init&gt;"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\LinearApplicationView.mc" id="22" lineNum="27" parent="globals/LinearApplicationView" pc="268436323" symbol="onLayout"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\LinearApplicationView.mc" id="22" lineNum="29" parent="globals/LinearApplicationView" pc="268436325" symbol="onLayout"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\LinearApplicationView.mc" id="23" lineNum="20" parent="globals/LinearApplicationView" pc="268436367" symbol="initialize"/>
@@ -243,40 +243,40 @@
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\fsm\\state.mc" id="86" lineNum="75" parent="globals/Jacobs/TwoMessagesState" pc="268439799" symbol="initialize"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\fsm\\state.mc" id="86" lineNum="77" parent="globals/Jacobs/TwoMessagesState" pc="268439817" symbol="initialize"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\fsm\\state.mc" id="86" lineNum="78" parent="globals/Jacobs/TwoMessagesState" pc="268439824" symbol="initialize"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="87" lineNum="82" parent="globals/Jacobs/Metric" pc="268439896" symbol="getHeuristics"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="87" lineNum="84" parent="globals/Jacobs/Metric" pc="268439898" symbol="getHeuristics"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="88" lineNum="80" parent="globals/Jacobs/Metric" pc="268439981" symbol="getName"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="88" lineNum="80" parent="globals/Jacobs/Metric" pc="268439983" symbol="getName"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="89" lineNum="92" parent="globals/Jacobs/Metric" pc="268439989" symbol="getHeuristic"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="89" lineNum="94" parent="globals/Jacobs/Metric" pc="268439991" symbol="getHeuristic"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="43" parent="globals/Jacobs/Metric" pc="268440003" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="46" parent="globals/Jacobs/Metric" pc="268440007" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="49" parent="globals/Jacobs/Metric" pc="268440038" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="49" parent="globals/Jacobs/Metric" pc="268440064" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="52" parent="globals/Jacobs/Metric" pc="268440099" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="53" parent="globals/Jacobs/Metric" pc="268440115" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="54" parent="globals/Jacobs/Metric" pc="268440131" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="55" parent="globals/Jacobs/Metric" pc="268440138" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="58" parent="globals/Jacobs/Metric" pc="268440145" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="60" parent="globals/Jacobs/Metric" pc="268440175" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="63" parent="globals/Jacobs/Metric" pc="268440204" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="66" parent="globals/Jacobs/Metric" pc="268440226" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="69" parent="globals/Jacobs/Metric" pc="268440256" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="69" parent="globals/Jacobs/Metric" pc="268440273" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="70" parent="globals/Jacobs/Metric" pc="268440289" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="70" parent="globals/Jacobs/Metric" pc="268440306" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="72" parent="globals/Jacobs/Metric" pc="268440322" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="75" parent="globals/Jacobs/Metric" pc="268440374" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="77" parent="globals/Jacobs/Metric" pc="268440415" symbol="addSample"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="91" lineNum="41" parent="globals/Jacobs/Metric" pc="268440496" symbol="getMostRecentValue"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="91" lineNum="41" parent="globals/Jacobs/Metric" pc="268440498" symbol="getMostRecentValue"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="92" lineNum="35" parent="globals/Jacobs/Metric" pc="268440565" symbol="initialize"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="92" lineNum="35" parent="globals/Jacobs/Metric" pc="268440569" symbol="initialize"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="92" lineNum="35" parent="globals/Jacobs/Metric" pc="268440587" symbol="initialize"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="93" lineNum="39" parent="globals/Jacobs/Metric" pc="268440624" symbol="getCurrent"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="93" lineNum="39" parent="globals/Jacobs/Metric" pc="268440626" symbol="getCurrent"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="94" lineNum="87" parent="globals/Jacobs/Metric" pc="268440632" symbol="getHeuristicsAsArray"/>
-        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="94" lineNum="89" parent="globals/Jacobs/Metric" pc="268440634" symbol="getHeuristicsAsArray"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="87" lineNum="78" parent="globals/Jacobs/Metric" pc="268439896" symbol="getHeuristics"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="87" lineNum="78" parent="globals/Jacobs/Metric" pc="268439898" symbol="getHeuristics"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="88" lineNum="77" parent="globals/Jacobs/Metric" pc="268439981" symbol="getName"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="88" lineNum="77" parent="globals/Jacobs/Metric" pc="268439983" symbol="getName"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="89" lineNum="80" parent="globals/Jacobs/Metric" pc="268439989" symbol="getHeuristic"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="89" lineNum="80" parent="globals/Jacobs/Metric" pc="268439991" symbol="getHeuristic"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="40" parent="globals/Jacobs/Metric" pc="268440003" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="43" parent="globals/Jacobs/Metric" pc="268440007" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="46" parent="globals/Jacobs/Metric" pc="268440038" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="46" parent="globals/Jacobs/Metric" pc="268440064" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="49" parent="globals/Jacobs/Metric" pc="268440099" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="50" parent="globals/Jacobs/Metric" pc="268440115" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="51" parent="globals/Jacobs/Metric" pc="268440131" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="52" parent="globals/Jacobs/Metric" pc="268440138" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="55" parent="globals/Jacobs/Metric" pc="268440145" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="57" parent="globals/Jacobs/Metric" pc="268440175" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="60" parent="globals/Jacobs/Metric" pc="268440204" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="63" parent="globals/Jacobs/Metric" pc="268440226" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="66" parent="globals/Jacobs/Metric" pc="268440256" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="66" parent="globals/Jacobs/Metric" pc="268440273" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="67" parent="globals/Jacobs/Metric" pc="268440289" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="67" parent="globals/Jacobs/Metric" pc="268440306" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="69" parent="globals/Jacobs/Metric" pc="268440322" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="72" parent="globals/Jacobs/Metric" pc="268440374" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="90" lineNum="74" parent="globals/Jacobs/Metric" pc="268440415" symbol="addSample"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="91" lineNum="82" parent="globals/Jacobs/Metric" pc="268440496" symbol="getMostRecentValue"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="91" lineNum="82" parent="globals/Jacobs/Metric" pc="268440498" symbol="getMostRecentValue"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="92" lineNum="36" parent="globals/Jacobs/Metric" pc="268440565" symbol="initialize"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="92" lineNum="36" parent="globals/Jacobs/Metric" pc="268440569" symbol="initialize"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="92" lineNum="36" parent="globals/Jacobs/Metric" pc="268440587" symbol="initialize"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="93" lineNum="79" parent="globals/Jacobs/Metric" pc="268440624" symbol="getHeuristicsAsArray"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="93" lineNum="79" parent="globals/Jacobs/Metric" pc="268440626" symbol="getHeuristicsAsArray"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="94" lineNum="81" parent="globals/Jacobs/Metric" pc="268440635" symbol="getCurrent"/>
+        <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\data\\Metric.mc" id="94" lineNum="81" parent="globals/Jacobs/Metric" pc="268440637" symbol="getCurrent"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\priority_queue\\PriorityQueue.mc" id="95" lineNum="25" parent="globals/Jacobs/MetricQueue/Item" pc="268440643" symbol="initialize"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\priority_queue\\PriorityQueue.mc" id="95" lineNum="27" parent="globals/Jacobs/MetricQueue/Item" pc="268440645" symbol="initialize"/>
         <entry filename="D:\\Masters Dissertation\\LinearApplication\\source\\core\\priority_queue\\PriorityQueue.mc" id="95" lineNum="28" parent="globals/Jacobs/MetricQueue/Item" pc="268440655" symbol="initialize"/>
@@ -426,7 +426,7 @@
         <entry endPc="268436621" name="i" stackId="7" startPc="268436515"/>
         <entry endPc="268436720" name="item" stackId="8" startPc="268436392"/>
         <entry arg="true" endPc="268437012" name="dc" stackId="1" startPc="268436811"/>
-        <entry endPc="268437012" name="rez_cmp_local_custom_drawable_12866569082095606887" stackId="2" startPc="268436823"/>
+        <entry endPc="268437012" name="rez_cmp_local_custom_drawable_88084812016680993631" stackId="2" startPc="268436823"/>
         <entry endPc="268437012" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436823"/>
         <entry arg="true" endPc="268437128" name="dc" stackId="1" startPc="268437013"/>
         <entry arg="true" endPc="268437128" name="metrics" stackId="2" startPc="268437013"/>
@@ -507,7 +507,7 @@
         <entry endPc="268440373" name="i" stackId="7" startPc="268440256"/>
         <entry endPc="268440494" name="root" stackId="8" startPc="268440007"/>
         <entry endPc="268440622" name="i" stackId="1" startPc="268440587"/>
-        <entry arg="true" endPc="268440631" name="activity" stackId="1" startPc="268440624"/>
+        <entry arg="true" endPc="268440642" name="activity" stackId="1" startPc="268440635"/>
         <entry arg="true" endPc="268440665" name="metric" stackId="1" startPc="268440643"/>
         <entry arg="true" endPc="268440665" name="priority" stackId="2" startPc="268440643"/>
     </localVars>
@@ -937,11 +937,11 @@
         <functionEntry accessMode="public" endPc="268440623" name="initialize" parent="Metric" startPc="268440565">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440631" name="getCurrent" parent="Metric" startPc="268440624">
-            <param id="activity"/>
+        <functionEntry accessMode="public" endPc="268440634" name="getHeuristicsAsArray" parent="Metric" startPc="268440624">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440642" name="getHeuristicsAsArray" parent="Metric" startPc="268440632">
+        <functionEntry accessMode="public" endPc="268440642" name="getCurrent" parent="Metric" startPc="268440635">
+            <param id="activity"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268440665" name="initialize" parent="Item" startPc="268440643">

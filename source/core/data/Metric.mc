@@ -14,7 +14,8 @@ module Jacobs
         RATE_OF_CHANGE = 1,
         RANGE = 2,
         USER_PRIORITY = 3,
-        LENGTH = 4
+        LENGTH = 4,
+        NUMBER_OF_HEURISTICS = 4
     }
 
     class Metric
@@ -36,10 +37,6 @@ module Jacobs
 
 
         // Methods:
-        public function getCurrent(activity as Activity.Info) as Numeric32 { return 0; }
-
-        public function getMostRecentValue() { return _samples.size() > 0 ? _samples[_samples.size()-1] : 0; }
-
         public function addSample(activity as Activity.Info) as Void 
         {
             // Add the new sample to the array of samples.
@@ -78,20 +75,10 @@ module Jacobs
         }
 
         public function getName() as String { return "DEFAULT_NAME"; }
-
-        public function getHeuristics() as HeuristicsInfo
-        {
-            return new HeuristicsInfo(_heuristics[0],_heuristics[1],_heuristics[2],_heuristics[3]);
-        }
-
-        public function getHeuristicsAsArray() as Array<Numeric32>
-        {
-            return _heuristics;
-        }
-
-        public function getHeuristic(heuristic as Heuristic)
-        {
-            return _heuristics[heuristic as Integer32];
-        }
+        public function getHeuristics() as HeuristicsInfo { return new HeuristicsInfo(_heuristics[0],_heuristics[1],_heuristics[2],_heuristics[3]); }
+        public function getHeuristicsAsArray() as Array<Numeric32> { return _heuristics; }
+        public function getHeuristic(heuristic as Heuristic) { return _heuristics[heuristic as Integer32]; }
+        public function getCurrent(activity as Activity.Info) as Numeric32 { return 0; }
+        public function getMostRecentValue() { return _samples.size() > 0 ? _samples[_samples.size()-1] : 0; }
     }
 }
