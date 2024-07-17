@@ -1,0 +1,27 @@
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 6; ]
+import Toybox.Activity;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 8; ]
+module Jacobs {
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 10; ]
+    type Numeric32 as Number or Float or Long or Double;
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 11; ]
+    type Float32 as Float;
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 12; ]
+    type Integer32 as Number;
+}
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\TypeDefinitions.mc"; @line = 1; ]
+<init> {
+}

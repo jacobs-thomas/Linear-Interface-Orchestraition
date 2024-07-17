@@ -1,0 +1,55 @@
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 6; ]
+import Toybox.Activity;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 8; ]
+module Jacobs {
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 10; ]
+    class DataPoint{
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 10; ]
+        <init> {
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 10; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 13; @position = 19; ]
+        public
+        var heartRate as Integer32 = 0;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 14; @position = 19; ]
+        public
+        var cadence as Integer32 = 0;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 15; @position = 19; ]
+        public
+        var pace as Float32 = 0.0;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 19; ]
+        public
+        function initialize(heartRate as Integer32, cadence as Integer32, pace as Float32) as Void {
+D_Masters_Dissertation_LinearApplication_source_core_data_DataPoint_mc_20_8_24_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc" 21 12 ]
+            %tmp.2 = lgetv %heartRate;
+            putv self :heartRate %tmp.2;
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc" 22 12 ]
+            %tmp.4 = lgetv %cadence;
+            putv self :cadence %tmp.4;
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc" 23 12 ]
+            %tmp.6 = lgetv %pace;
+            putv self :pace %tmp.6;
+D_Masters_Dissertation_LinearApplication_source_core_data_DataPoint_mc_20_8_24_8_stop:
+        }
+    }
+}
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\DataPoint.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,217 @@
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 6; ]
+import Toybox.Activity;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 8; ]
+module Jacobs {
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 10; ]
+    enum MetricType {
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 12; @position = 8; ]
+        CADENCE = 0,
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 13; @position = 8; ]
+        HEART_RATE = 1,
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 14; @position = 8; ]
+        PACE = 2
+    }
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 17; ]
+    enum MetricHeuristic {
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 19; @position = 8; ]
+        FLUCTUATION = 0,
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 20; @position = 8; ]
+        RATE_OF_CHANGE = 1,
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 21; @position = 8; ]
+        RANGE = 2,
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 22; @position = 8; ]
+        USER_PRIORITY = 3
+    }
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 25; ]
+    class Archive{
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 25; ]
+        <init> {
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 25; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 28; @position = 22; ]
+        private
+        const _NUMBER_OF_METRICS as Integer32 = 3;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 29; @position = 22; ]
+        private
+        const _NUMBER_OF_HEURISTICS as Integer = 4;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 30; @position = 22; ]
+        private
+        const _NUMBER_OF_SAMPLES as Integer = 5;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 34; @position = 20; ]
+        private
+        var data as Array<DataPoint>;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 35; @position = 20; ]
+        private
+        var heuristics as Array<DataPoint>;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 39; ]
+        public
+        function initialize() as Void {
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_40_8_43_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 41 12 ]
+            %tmp.2 = 0;
+            %tmp.1 = newa Array<DataPoint> %tmp.2;
+            putv self :data %tmp.1;
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 42 12 ]
+            %tmp.5 = getv ? :_NUMBER_OF_HEURISTICS;
+            %tmp.3 = newa Array<DataPoint> %tmp.5;
+            putv self :heuristics %tmp.3;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_40_8_43_8_stop:
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 47; ]
+        public
+        function collectData() {
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 50 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_start" "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_stop" ]
+            %activityInfo.1 = local;
+            %tmp.1 = getm $.Toybox.Activity;
+            %tmp.2 = getv function %tmp.1 :getActivityInfo;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %activityInfo.1 %tmp.3;
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 51 12 ]
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_51_12_51_47_if_stmt:
+            %tmp.5 = lgetv %activityInfo.1;
+            %tmp.6 = null;
+            %tmp.7 = eq %tmp.5 %tmp.6;
+            bf %tmp.7 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_51_12_51_47_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_51_12_51_47_if_true:
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_51_37_51_47_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 51 39 ]
+            ret ?;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_51_37_51_47_stop:
+            goto @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_51_12_51_47_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_51_12_51_47_if_end:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 56 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_start" "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_stop" ]
+            %heartRate.2 = local;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_begin:
+            %tmp.8 = lgetv %activityInfo.1;
+            %tmp.9 = getv %tmp.8 :currentHeartRate;
+            %tmp.10 = null;
+            %tmp.11 = ne %tmp.9 %tmp.10;
+            bf %tmp.11 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_false;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_true:
+            %tmp.12 = lgetv %activityInfo.1;
+            %tmp.13 = getv %tmp.12 :currentHeartRate;
+            push %tmp.13;
+            goto @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_false:
+            %tmp.14 = 0.0;
+            push %tmp.14;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_end:
+            %tmp.15 = phi [%tmp.11 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_begin] [%tmp.13 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_true] [%tmp.14 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_false] [%tmp.15 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_56_28_56_102_end];
+            lputv %heartRate.2 %tmp.15;
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 57 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_start" "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_stop" ]
+            %cadence.3 = local;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_begin:
+            %tmp.16 = lgetv %activityInfo.1;
+            %tmp.17 = getv %tmp.16 :currentCadence;
+            %tmp.18 = null;
+            %tmp.19 = ne %tmp.17 %tmp.18;
+            bf %tmp.19 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_false;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_true:
+            %tmp.20 = lgetv %activityInfo.1;
+            %tmp.21 = getv %tmp.20 :currentCadence;
+            push %tmp.21;
+            goto @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_false:
+            %tmp.22 = 0.0;
+            push %tmp.22;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_end:
+            %tmp.23 = phi [%tmp.19 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_begin] [%tmp.21 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_true] [%tmp.22 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_false] [%tmp.23 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_57_26_57_96_end];
+            lputv %cadence.3 %tmp.23;
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 58 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_start" "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_stop" ]
+            %speed.4 = local;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_begin:
+            %tmp.24 = lgetv %activityInfo.1;
+            %tmp.25 = getv %tmp.24 :currentSpeed;
+            %tmp.26 = null;
+            %tmp.27 = ne %tmp.25 %tmp.26;
+            bf %tmp.27 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_false;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_true:
+            %tmp.28 = lgetv %activityInfo.1;
+            %tmp.29 = getv %tmp.28 :currentSpeed;
+            push %tmp.29;
+            goto @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_false:
+            %tmp.30 = 0.0;
+            push %tmp.30;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_end:
+            %tmp.31 = phi [%tmp.27 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_begin] [%tmp.29 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_true] [%tmp.30 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_false] [%tmp.31 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_58_24_58_90_end];
+            lputv %speed.4 %tmp.31;
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 60 12 ]
+            %tmp.33 = getv ? :data;
+            %tmp.34 = getv function %tmp.33 :add;
+            %tmp.38 = getv ? :DataPoint;
+            %tmp.40 = lgetv %heartRate.2;
+            %tmp.42 = lgetv %cadence.3;
+            %tmp.44 = lgetv %speed.4;
+            %tmp.35 = newc %tmp.38 (%tmp.40, %tmp.42, %tmp.44);
+            invoke %tmp.33 %tmp.34(%tmp.35);
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 61 12 ]
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_61_12_61_74_if_stmt:
+            %tmp.46 = getv ? :data;
+            %tmp.47 = getv function %tmp.46 :size;
+            %tmp.48 = invoke %tmp.46 %tmp.47();
+            %tmp.50 = getv ? :_NUMBER_OF_SAMPLES;
+            %tmp.51 = gte %tmp.48 %tmp.50;
+            bf %tmp.51 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_61_12_61_74_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_61_12_61_74_if_true:
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_61_50_61_74_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 61 52 ]
+            %tmp.53 = getv ? :data;
+            %tmp.54 = getv function %tmp.53 :remove;
+            %tmp.56 = getv ? :data;
+            %tmp.57 = 0;
+            %tmp.58 = agetv %tmp.56 %tmp.57;
+            invoke %tmp.53 %tmp.54(%tmp.58);
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_61_50_61_74_stop:
+            goto @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_61_12_61_74_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_61_12_61_74_if_end:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 65 12 ]
+            for @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_test @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_incr @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_init:
+            [ "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_begin" "D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_end" ]
+            %i.5 = local;
+            %tmp.59 = 0;
+            lputv %i.5 %tmp.59;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_test:
+            %tmp.61 = lgetv %i.5;
+            %tmp.63 = getv ? :data;
+            %tmp.64 = getv function %tmp.63 :size;
+            %tmp.65 = invoke %tmp.63 %tmp.64();
+            %tmp.66 = lt %tmp.61 %tmp.65;
+            bf %tmp.66 @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_end;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_begin:
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_incr:
+[ "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc" 65 ]
+            %tmp.69 = lgetv %i.5;
+            %tmp.70 = add %tmp.69 1;
+            lputv %i.5 %tmp.70;
+            goto @D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_test;
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_65_12_68_12_for_end:
+D_Masters_Dissertation_LinearApplication_source_core_data_Archive_mc_48_8_69_8_stop:
+        }
+    }
+}
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\data\Archive.mc"; @line = 1; ]
+<init> {
+}

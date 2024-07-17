@@ -1,0 +1,310 @@
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 6; ]
+import Toybox.Activity;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 8; ]
+using Toybox.Application as :App;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 9; ]
+using Toybox.Activity as :Activity;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 10; ]
+using Toybox.System as :Sys;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 11; ]
+using Toybox.Test;
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 13; ]
+module Jacobs {
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 13; ]
+    <init> {
+    }
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 15; ]
+    class PriorityQueueOLD{
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 15; ]
+        <init> {
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 15; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 25; @position = 22; ]
+        private
+        const _STARTING_INDEX as Lang.Number = 0;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 26; @position = 22; ]
+        private
+        const _OUT_OF_RANGE as Lang.Number = -1;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 30; @position = 20; ]
+        private
+        var _mElements as Array<Prioritisable>;
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 34; ]
+        public
+        function initialize() as Void {
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_35_8_37_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 36 12 ]
+            %tmp.1 = newa 0;
+            putv self :_mElements %tmp.1;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_35_8_37_8_stop:
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 41; ]
+        public
+        function enqueue(item as Prioritisable) as Void {
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_42_8_51_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 49 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_42_8_51_8_start" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_42_8_51_8_stop" ]
+            %position.1 = local;
+            %tmp.1 = self;
+            %tmp.2 = getv function %tmp.1 :findInsertPosition;
+            %tmp.4 = lgetv %item;
+            %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+            lputv %position.1 %tmp.5;
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 50 12 ]
+            %tmp.6 = self;
+            %tmp.7 = getv function %tmp.6 :insertAtPosition;
+            %tmp.9 = lgetv %item;
+            %tmp.11 = lgetv %position.1;
+            invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_42_8_51_8_stop:
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 53; ]
+        public
+        function dequeue() as Object or Null {
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_54_8_72_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 61 12 ]
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_61_12_65_12_if_stmt:
+            %tmp.2 = getv ? :_mElements;
+            %tmp.3 = getv function %tmp.2 :size;
+            %tmp.4 = invoke %tmp.2 %tmp.3();
+            %tmp.5 = 0;
+            %tmp.6 = eq %tmp.4 %tmp.5;
+            bf %tmp.6 @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_61_12_65_12_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_61_12_65_12_if_true:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_62_12_65_12_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 64 16 ]
+            %tmp.7 = null;
+            ret %tmp.7;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_62_12_65_12_stop:
+            goto @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_61_12_65_12_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_61_12_65_12_if_end:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 68 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_54_8_72_8_start" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_54_8_72_8_stop" ]
+            %object.1 = local;
+            %tmp.9 = getv ? :_mElements;
+            %tmp.11 = getv ? :_STARTING_INDEX;
+            %tmp.12 = agetv %tmp.9 %tmp.11;
+            lputv %object.1 %tmp.12;
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 69 12 ]
+            %tmp.14 = getv ? :_mElements;
+            %tmp.15 = getv function %tmp.14 :remove;
+            %tmp.17 = getv ? :_mElements;
+            %tmp.19 = getv ? :_STARTING_INDEX;
+            %tmp.20 = agetv %tmp.17 %tmp.19;
+            invoke %tmp.14 %tmp.15(%tmp.20);
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 71 12 ]
+            %tmp.22 = lgetv %object.1;
+            ret %tmp.22;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_54_8_72_8_stop:
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 74; ]
+        public
+        function updatePriority(item as Prioritisable, newPriority as Number) as Void {
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_75_8_94_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 84 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_75_8_94_8_start" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_75_8_94_8_stop" ]
+            %index.1 = local;
+            %tmp.2 = getv ? :_mElements;
+            %tmp.3 = getv function %tmp.2 :indexOf;
+            %tmp.5 = lgetv %item;
+            %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+            lputv %index.1 %tmp.6;
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 86 12 ]
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_86_12_93_12_if_stmt:
+            %tmp.8 = lgetv %index.1;
+            %tmp.10 = getv ? :_OUT_OF_RANGE;
+            %tmp.11 = ne %tmp.8 %tmp.10;
+            bf %tmp.11 @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_86_12_93_12_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_86_12_93_12_if_true:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_87_12_93_12_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 89 16 ]
+            %tmp.13 = getv ? :_mElements;
+            %tmp.14 = getv function %tmp.13 :remove;
+            %tmp.16 = lgetv %item;
+            invoke %tmp.13 %tmp.14(%tmp.16);
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 90 16 ]
+            %tmp.17 = lgetv %item;
+            %tmp.18 = getv function %tmp.17 :setPriority;
+            %tmp.20 = lgetv %newPriority;
+            invoke %tmp.17 %tmp.18(%tmp.20);
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 92 16 ]
+            %tmp.21 = self;
+            %tmp.22 = getv function %tmp.21 :enqueue;
+            %tmp.24 = lgetv %item;
+            invoke %tmp.21 %tmp.22(%tmp.24);
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_87_12_93_12_stop:
+            goto @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_86_12_93_12_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_86_12_93_12_if_end:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_75_8_94_8_stop:
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 96; ]
+        private
+        function findInsertPosition(item as Prioritisable) as Number {
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_97_8_124_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 105 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_97_8_124_8_start" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_97_8_124_8_stop" ]
+            %low.1 = local;
+            %tmp.1 = 0;
+            lputv %low.1 %tmp.1;
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 106 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_97_8_124_8_start" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_97_8_124_8_stop" ]
+            %high.2 = local;
+            %tmp.3 = getv ? :_mElements;
+            %tmp.4 = getv function %tmp.3 :size;
+            %tmp.5 = invoke %tmp.3 %tmp.4();
+            %tmp.6 = 1;
+            %tmp.7 = sub %tmp.5 %tmp.6;
+            lputv %high.2 %tmp.7;
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 108 12 ]
+            while @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_108_12_121_12_while_test @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_108_12_121_12_while_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_108_12_121_12_while_test:
+            %tmp.9 = lgetv %low.1;
+            %tmp.11 = lgetv %high.2;
+            %tmp.12 = lte %tmp.9 %tmp.11;
+            bf %tmp.12 @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_108_12_121_12_while_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_108_12_121_12_while_begin:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_109_12_121_12_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 110 16 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_109_12_121_12_start" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_109_12_121_12_stop" ]
+            %mid.3 = local;
+            %tmp.14 = lgetv %low.1;
+            %tmp.16 = lgetv %high.2;
+            %tmp.17 = add %tmp.14 %tmp.16;
+            %tmp.18 = 2;
+            %tmp.19 = div %tmp.17 %tmp.18;
+            lputv %mid.3 %tmp.19;
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 112 16 ]
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_112_16_120_16_if_stmt:
+            %tmp.21 = getv ? :_mElements;
+            %tmp.23 = lgetv %mid.3;
+            %tmp.24 = agetv %tmp.21 %tmp.23;
+            %tmp.25 = getv function %tmp.24 :getPriority;
+            %tmp.26 = invoke %tmp.24 %tmp.25();
+            %tmp.27 = lgetv %item;
+            %tmp.28 = getv function %tmp.27 :getPriority;
+            %tmp.29 = invoke %tmp.27 %tmp.28();
+            %tmp.30 = lt %tmp.26 %tmp.29;
+            bf %tmp.30 @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_112_16_120_16_if_false;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_112_16_120_16_if_true:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_113_16_115_16_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 114 20 ]
+            %tmp.32 = lgetv %mid.3;
+            %tmp.33 = 1;
+            %tmp.34 = sub %tmp.32 %tmp.33;
+            lputv %high.2 %tmp.34;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_113_16_115_16_stop:
+            goto @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_112_16_120_16_if_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_112_16_120_16_if_false:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_118_16_120_16_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 119 20 ]
+            %tmp.36 = lgetv %mid.3;
+            %tmp.37 = 1;
+            %tmp.38 = add %tmp.36 %tmp.37;
+            lputv %low.1 %tmp.38;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_118_16_120_16_stop:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_112_16_120_16_if_end:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_109_12_121_12_stop:
+            goto @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_108_12_121_12_while_test;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_108_12_121_12_while_end:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 123 12 ]
+            %tmp.40 = lgetv %low.1;
+            ret %tmp.40;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_97_8_124_8_stop:
+        }
+        [ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 126; ]
+        private
+        function insertAtPosition(item as Prioritisable, position as Number) as Void {
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_127_8_150_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 135 12 ]
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_127_8_150_8_start" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_127_8_150_8_stop" ]
+            %newElements.1 = local;
+            %tmp.2 = 0;
+            %tmp.1 = newa Array<Prioritisable> %tmp.2;
+            lputv %newElements.1 %tmp.1;
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 137 12 ]
+            for @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_test @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_incr @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_init:
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_begin" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_end" ]
+            %i.2 = local;
+            %tmp.3 = 0;
+            lputv %i.2 %tmp.3;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_test:
+            %tmp.5 = lgetv %i.2;
+            %tmp.7 = lgetv %position;
+            %tmp.8 = lt %tmp.5 %tmp.7;
+            bf %tmp.8 @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_begin:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_138_12_140_12_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 139 16 ]
+            %tmp.9 = lgetv %newElements.1;
+            %tmp.10 = getv function %tmp.9 :add;
+            %tmp.12 = getv ? :_mElements;
+            %tmp.14 = lgetv %i.2;
+            %tmp.15 = agetv %tmp.12 %tmp.14;
+            invoke %tmp.9 %tmp.10(%tmp.15);
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_138_12_140_12_stop:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_incr:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 137 ]
+            %tmp.18 = lgetv %i.2;
+            %tmp.19 = add %tmp.18 1;
+            lputv %i.2 %tmp.19;
+            goto @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_test;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_137_12_140_12_for_end:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 142 12 ]
+            %tmp.20 = lgetv %newElements.1;
+            %tmp.21 = getv function %tmp.20 :add;
+            %tmp.23 = lgetv %item;
+            invoke %tmp.20 %tmp.21(%tmp.23);
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 144 12 ]
+            for @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_test @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_incr @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_init:
+            [ "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_begin" "D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_end" ]
+            %i.3 = local;
+            %tmp.25 = lgetv %position;
+            lputv %i.3 %tmp.25;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_test:
+            %tmp.27 = lgetv %i.3;
+            %tmp.29 = getv ? :_mElements;
+            %tmp.30 = getv function %tmp.29 :size;
+            %tmp.31 = invoke %tmp.29 %tmp.30();
+            %tmp.32 = lt %tmp.27 %tmp.31;
+            bf %tmp.32 @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_end;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_begin:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_145_12_147_12_start:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 146 16 ]
+            %tmp.33 = lgetv %newElements.1;
+            %tmp.34 = getv function %tmp.33 :add;
+            %tmp.36 = getv ? :_mElements;
+            %tmp.38 = lgetv %i.3;
+            %tmp.39 = agetv %tmp.36 %tmp.38;
+            invoke %tmp.33 %tmp.34(%tmp.39);
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_145_12_147_12_stop:
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_incr:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 144 ]
+            %tmp.42 = lgetv %i.3;
+            %tmp.43 = add %tmp.42 1;
+            lputv %i.3 %tmp.43;
+            goto @D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_test;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_144_12_147_12_for_end:
+[ "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc" 149 12 ]
+            %tmp.45 = lgetv %newElements.1;
+            putv self :_mElements %tmp.45;
+D_Masters_Dissertation_LinearApplication_source_core_priority_queue_queue_mc_127_8_150_8_stop:
+        }
+    }
+}
+[ @file = "D:\Masters Dissertation\LinearApplication\source\core\priority_queue\queue.mc"; @line = 1; ]
+<init> {
+}
