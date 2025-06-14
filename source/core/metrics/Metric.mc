@@ -52,12 +52,12 @@ module Jacobs
             var deviation = 0;
 
             // Calculate the mean.
-            for(var i = 1; i < _samples.size(); i++)
+            for(var i = 0; i < _samples.size(); i++)
             {
                 mean += _samples[i];
             }
 
-            mean = mean/_samples.size();
+            mean = mean <= 0 ? mean : mean/_samples.size();
 
             // Calculate the deiviation and rate of change.
             for(var i = 1; i < _samples.size(); i++)

@@ -47,19 +47,88 @@ class LinearApplicationView extends WatchUi.WatchFace{
     [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 16; @position = 16; ]
     private
     var _metrics;
-    [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 20; ]
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 17; @position = 16; ]
+    private
+    var i = 0;
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 21; ]
     function initialize() as Void {
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_21_4_23_4_start:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 22 8 ]
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_22_4_39_4_start:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 23 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_21_4_23_4_stop:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 26 8 ]
+        %tmp.5 = getv ? :_metrics;
+        %tmp.6 = 0;
+        %tmp.7 = agetv %tmp.5 %tmp.6;
+        %tmp.8 = getv %tmp.7 :range;
+        %tmp.9 = getv function %tmp.8 :setMinimum;
+        %tmp.10 = 170;
+        invoke %tmp.8 %tmp.9(%tmp.10);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 27 8 ]
+        %tmp.12 = getv ? :_metrics;
+        %tmp.13 = 0;
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        %tmp.15 = getv %tmp.14 :range;
+        %tmp.16 = getv function %tmp.15 :setMaximum;
+        %tmp.17 = 180;
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 28 8 ]
+        %tmp.18 = getv self :_metrics;
+        %tmp.19 = 0;
+        %tmp.20 = agetv %tmp.18 %tmp.19;
+        %tmp.21 = 0.2;
+        putv %tmp.20 :userPriority %tmp.21;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 31 8 ]
+        %tmp.23 = getv ? :_metrics;
+        %tmp.24 = 1;
+        %tmp.25 = agetv %tmp.23 %tmp.24;
+        %tmp.26 = getv %tmp.25 :range;
+        %tmp.27 = getv function %tmp.26 :setMinimum;
+        %tmp.28 = 5;
+        invoke %tmp.26 %tmp.27(%tmp.28);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 32 8 ]
+        %tmp.30 = getv ? :_metrics;
+        %tmp.31 = 1;
+        %tmp.32 = agetv %tmp.30 %tmp.31;
+        %tmp.33 = getv %tmp.32 :range;
+        %tmp.34 = getv function %tmp.33 :setMaximum;
+        %tmp.35 = 5.3;
+        invoke %tmp.33 %tmp.34(%tmp.35);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 33 8 ]
+        %tmp.36 = getv self :_metrics;
+        %tmp.37 = 1;
+        %tmp.38 = agetv %tmp.36 %tmp.37;
+        %tmp.39 = 0.2;
+        putv %tmp.38 :userPriority %tmp.39;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 36 8 ]
+        %tmp.41 = getv ? :_metrics;
+        %tmp.42 = 2;
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        %tmp.44 = getv %tmp.43 :range;
+        %tmp.45 = getv function %tmp.44 :setMinimum;
+        %tmp.46 = 160;
+        invoke %tmp.44 %tmp.45(%tmp.46);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 37 8 ]
+        %tmp.48 = getv ? :_metrics;
+        %tmp.49 = 2;
+        %tmp.50 = agetv %tmp.48 %tmp.49;
+        %tmp.51 = getv %tmp.50 :range;
+        %tmp.52 = getv function %tmp.51 :setMaximum;
+        %tmp.53 = 170;
+        invoke %tmp.51 %tmp.52(%tmp.53);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 38 8 ]
+        %tmp.54 = getv self :_metrics;
+        %tmp.55 = 2;
+        %tmp.56 = agetv %tmp.54 %tmp.55;
+        %tmp.57 = 0.4;
+        putv %tmp.56 :userPriority %tmp.57;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_22_4_39_4_stop:
     }
-    [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 27; ]
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 43; ]
     function onLayout(dc as Dc) as Void {
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_28_4_30_4_start:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 29 8 ]
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_44_4_46_4_start:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 45 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -68,176 +137,193 @@ D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_28_4_30
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_28_4_30_4_stop:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_44_4_46_4_stop:
     }
-    [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 32; ]
+    [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 48; ]
     function onUpdate(dc as Dc) as Void {
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 35 8 ]
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 51 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 38 8 ]
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop" ]
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 54 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
         %activity.1 = local;
         %tmp.7 = getv ? :Activity;
         %tmp.8 = getv function %tmp.7 :getActivityInfo;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         lputv %activity.1 %tmp.9;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 39 8 ]
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop" ]
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 55 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
         %queue.2 = local;
         %tmp.13 = getv ? :MetricQueue;
         %tmp.10 = newc %tmp.13 ();
         lputv %queue.2 %tmp.10;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 40 8 ]
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop" ]
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 56 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
         %result.3 = local;
         %tmp.14 = newa 0;
         lputv %result.3 %tmp.14;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 41 8 ]
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop" ]
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 57 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
         %maximumPriority.4 = local;
         %tmp.15 = 0;
         lputv %maximumPriority.4 %tmp.15;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 42 8 ]
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop" ]
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 58 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
         %priority.5 = local;
         %tmp.16 = 0;
         lputv %priority.5 %tmp.16;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 43 8 ]
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop" ]
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 59 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
         %heuristics.6 = local;
         %tmp.17 = newa 0;
         lputv %heuristics.6 %tmp.17;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 46 8 ]
-        for @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_test @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_incr @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_init:
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_begin" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_end" ]
-        %i.7 = local;
-        %tmp.18 = 0;
-        lputv %i.7 %tmp.18;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_test:
-        %tmp.20 = lgetv %i.7;
-        %tmp.22 = getv ? :_metrics;
-        %tmp.23 = getv function %tmp.22 :size;
-        %tmp.24 = invoke %tmp.22 %tmp.23();
-        %tmp.25 = lt %tmp.20 %tmp.24;
-        bf %tmp.25 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_begin:
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_47_8_58_8_start:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 49 12 ]
-        %tmp.27 = getv ? :_metrics;
-        %tmp.29 = lgetv %i.7;
-        %tmp.30 = agetv %tmp.27 %tmp.29;
-        %tmp.31 = getv function %tmp.30 :addSample;
-        %tmp.33 = lgetv %activity.1;
-        invoke %tmp.30 %tmp.31(%tmp.33);
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 52 12 ]
-        %tmp.35 = getv ? :_metrics;
-        %tmp.37 = lgetv %i.7;
-        %tmp.38 = agetv %tmp.35 %tmp.37;
-        %tmp.39 = getv function %tmp.38 :getHeuristicsAsArray;
-        %tmp.40 = invoke %tmp.38 %tmp.39();
-        lputv %heuristics.6 %tmp.40;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 53 12 ]
-        %tmp.42 = lgetv %heuristics.6;
-        %tmp.43 = 0;
-        %tmp.44 = agetv %tmp.42 %tmp.43;
-        %tmp.46 = lgetv %heuristics.6;
-        %tmp.47 = 1;
-        %tmp.48 = agetv %tmp.46 %tmp.47;
-        %tmp.49 = add %tmp.44 %tmp.48;
-        %tmp.51 = lgetv %heuristics.6;
-        %tmp.52 = 2;
-        %tmp.53 = agetv %tmp.51 %tmp.52;
-        %tmp.54 = add %tmp.49 %tmp.53;
-        %tmp.56 = lgetv %heuristics.6;
-        %tmp.57 = 3;
-        %tmp.58 = agetv %tmp.56 %tmp.57;
-        %tmp.59 = mul %tmp.54 %tmp.58;
-        lputv %priority.5 %tmp.59;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 55 12 ]
-        %tmp.60 = lgetv %queue.2;
-        %tmp.61 = getv function %tmp.60 :enqueue;
-        %tmp.63 = getv ? :_metrics;
-        %tmp.65 = lgetv %i.7;
-        %tmp.66 = agetv %tmp.63 %tmp.65;
-        %tmp.68 = lgetv %priority.5;
-        invoke %tmp.60 %tmp.61(%tmp.66, %tmp.68);
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 57 12 ]
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_57_12_57_73_if_stmt:
-        %tmp.70 = lgetv %maximumPriority.4;
-        %tmp.72 = lgetv %priority.5;
-        %tmp.73 = lt %tmp.70 %tmp.72;
-        bf %tmp.73 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_57_12_57_73_if_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_57_12_57_73_if_true:
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_57_43_57_73_start:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 57 45 ]
-        %tmp.75 = lgetv %priority.5;
-        lputv %maximumPriority.4 %tmp.75;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_57_43_57_73_stop:
-        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_57_12_57_73_if_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_57_12_57_73_if_end:
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_47_8_58_8_stop:
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_incr:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 46 ]
-        %tmp.78 = lgetv %i.7;
-        %tmp.79 = add %tmp.78 1;
-        lputv %i.7 %tmp.79;
-        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_test;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_46_8_58_8_for_end:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 60 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
+        %test.7 = local;
+        %tmp.21 = getv ? :Metrics;
+        %tmp.18 = newc %tmp.21 ();
+        lputv %test.7 %tmp.18;
 [ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 61 8 ]
-        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop" ]
-        %item.8 = local;
-        %tmp.80 = null;
-        lputv %item.8 %tmp.80;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 63 8 ]
-        while @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_63_8_71_8_while_test @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_63_8_71_8_while_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_63_8_71_8_while_test:
-        %tmp.81 = lgetv %queue.2;
-        %tmp.82 = getv function %tmp.81 :isEmpty;
-        %tmp.83 = invoke %tmp.81 %tmp.82();
-        %tmp.84 = not %tmp.83;
-        bf %tmp.84 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_63_8_71_8_while_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_63_8_71_8_while_begin:
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_64_8_71_8_start:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 65 12 ]
-        %tmp.85 = lgetv %queue.2;
-        %tmp.86 = getv function %tmp.85 :dequeue;
-        %tmp.87 = invoke %tmp.85 %tmp.86();
-        lputv %item.8 %tmp.87;
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 67 12 ]
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_67_12_70_12_if_stmt:
-        %tmp.89 = lgetv %maximumPriority.4;
-        %tmp.90 = lgetv %item.8;
-        %tmp.91 = getv %tmp.90 :priority;
-        %tmp.92 = sub %tmp.89 %tmp.91;
-        %tmp.94 = getv ? :_TOLERANCE;
-        %tmp.95 = lt %tmp.92 %tmp.94;
-        bf %tmp.95 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_67_12_70_12_if_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_67_12_70_12_if_true:
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_68_12_70_12_start:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 69 16 ]
-        %tmp.96 = lgetv %result.3;
-        %tmp.97 = getv function %tmp.96 :add;
-        %tmp.98 = lgetv %item.8;
-        %tmp.99 = getv %tmp.98 :metric;
-        invoke %tmp.96 %tmp.97(%tmp.99);
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_68_12_70_12_stop:
-        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_67_12_70_12_if_end;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_67_12_70_12_if_end:
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_64_8_71_8_stop:
-        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_63_8_71_8_while_test;
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_63_8_71_8_while_end:
-[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 74 8 ]
-        %tmp.101 = getv ? :layoutOrchestrator;
-        %tmp.102 = getv function %tmp.101 :draw;
-        %tmp.104 = lgetv %result.3;
-        %tmp.106 = lgetv %dc;
-        invoke %tmp.101 %tmp.102(%tmp.104, %tmp.106);
-D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_33_4_75_4_stop:
+        %tmp.22 = lgetv %test.7;
+        %tmp.23 = getv function %tmp.22 :getInfo;
+        %tmp.25 = getv ? :i;
+        %tmp.26 = invoke %tmp.22 %tmp.23(%tmp.25);
+        lputv %activity.1 %tmp.26;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 62 8 ]
+        %tmp.27 = getv self :i;
+        %tmp.28 = 1;
+        %tmp.29 = add %tmp.27 %tmp.28;
+        putv self :i dup %tmp.29;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 65 8 ]
+        for @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_test @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_incr @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_init:
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_begin" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_end" ]
+        %i.8 = local;
+        %tmp.30 = 0;
+        lputv %i.8 %tmp.30;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_test:
+        %tmp.32 = lgetv %i.8;
+        %tmp.34 = getv ? :_metrics;
+        %tmp.35 = getv function %tmp.34 :size;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = lt %tmp.32 %tmp.36;
+        bf %tmp.37 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_begin:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_66_8_77_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 68 12 ]
+        %tmp.39 = getv ? :_metrics;
+        %tmp.41 = lgetv %i.8;
+        %tmp.42 = agetv %tmp.39 %tmp.41;
+        %tmp.43 = getv function %tmp.42 :addSample;
+        %tmp.45 = lgetv %activity.1;
+        invoke %tmp.42 %tmp.43(%tmp.45);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 71 12 ]
+        %tmp.47 = getv ? :_metrics;
+        %tmp.49 = lgetv %i.8;
+        %tmp.50 = agetv %tmp.47 %tmp.49;
+        %tmp.51 = getv function %tmp.50 :getHeuristicsAsArray;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        lputv %heuristics.6 %tmp.52;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 72 12 ]
+        %tmp.54 = lgetv %heuristics.6;
+        %tmp.55 = 0;
+        %tmp.56 = agetv %tmp.54 %tmp.55;
+        %tmp.58 = lgetv %heuristics.6;
+        %tmp.59 = 1;
+        %tmp.60 = agetv %tmp.58 %tmp.59;
+        %tmp.61 = add %tmp.56 %tmp.60;
+        %tmp.63 = lgetv %heuristics.6;
+        %tmp.64 = 2;
+        %tmp.65 = agetv %tmp.63 %tmp.64;
+        %tmp.66 = add %tmp.61 %tmp.65;
+        %tmp.68 = lgetv %heuristics.6;
+        %tmp.69 = 3;
+        %tmp.70 = agetv %tmp.68 %tmp.69;
+        %tmp.71 = mul %tmp.66 %tmp.70;
+        lputv %priority.5 %tmp.71;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 74 12 ]
+        %tmp.72 = lgetv %queue.2;
+        %tmp.73 = getv function %tmp.72 :enqueue;
+        %tmp.75 = getv ? :_metrics;
+        %tmp.77 = lgetv %i.8;
+        %tmp.78 = agetv %tmp.75 %tmp.77;
+        %tmp.80 = lgetv %priority.5;
+        invoke %tmp.72 %tmp.73(%tmp.78, %tmp.80);
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 76 12 ]
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_76_12_76_73_if_stmt:
+        %tmp.82 = lgetv %maximumPriority.4;
+        %tmp.84 = lgetv %priority.5;
+        %tmp.85 = lt %tmp.82 %tmp.84;
+        bf %tmp.85 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_76_12_76_73_if_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_76_12_76_73_if_true:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_76_43_76_73_start:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 76 45 ]
+        %tmp.87 = lgetv %priority.5;
+        lputv %maximumPriority.4 %tmp.87;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_76_43_76_73_stop:
+        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_76_12_76_73_if_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_76_12_76_73_if_end:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_66_8_77_8_stop:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_incr:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 65 ]
+        %tmp.90 = lgetv %i.8;
+        %tmp.91 = add %tmp.90 1;
+        lputv %i.8 %tmp.91;
+        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_test;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_65_8_77_8_for_end:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 80 8 ]
+        [ "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_start" "D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop" ]
+        %item.9 = local;
+        %tmp.92 = null;
+        lputv %item.9 %tmp.92;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 82 8 ]
+        while @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_82_8_90_8_while_test @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_82_8_90_8_while_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_82_8_90_8_while_test:
+        %tmp.93 = lgetv %queue.2;
+        %tmp.94 = getv function %tmp.93 :isEmpty;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        %tmp.96 = not %tmp.95;
+        bf %tmp.96 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_82_8_90_8_while_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_82_8_90_8_while_begin:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_83_8_90_8_start:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 84 12 ]
+        %tmp.97 = lgetv %queue.2;
+        %tmp.98 = getv function %tmp.97 :dequeue;
+        %tmp.99 = invoke %tmp.97 %tmp.98();
+        lputv %item.9 %tmp.99;
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 86 12 ]
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_86_12_89_12_if_stmt:
+        %tmp.101 = lgetv %maximumPriority.4;
+        %tmp.102 = lgetv %item.9;
+        %tmp.103 = getv %tmp.102 :priority;
+        %tmp.104 = sub %tmp.101 %tmp.103;
+        %tmp.106 = getv ? :_TOLERANCE;
+        %tmp.107 = lt %tmp.104 %tmp.106;
+        bf %tmp.107 @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_86_12_89_12_if_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_86_12_89_12_if_true:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_87_12_89_12_start:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 88 16 ]
+        %tmp.108 = lgetv %result.3;
+        %tmp.109 = getv function %tmp.108 :add;
+        %tmp.110 = lgetv %item.9;
+        %tmp.111 = getv %tmp.110 :metric;
+        invoke %tmp.108 %tmp.109(%tmp.111);
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_87_12_89_12_stop:
+        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_86_12_89_12_if_end;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_86_12_89_12_if_end:
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_83_8_90_8_stop:
+        goto @D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_82_8_90_8_while_test;
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_82_8_90_8_while_end:
+[ "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc" 93 8 ]
+        %tmp.113 = getv ? :layoutOrchestrator;
+        %tmp.114 = getv function %tmp.113 :draw;
+        %tmp.116 = lgetv %result.3;
+        %tmp.118 = lgetv %dc;
+        invoke %tmp.113 %tmp.114(%tmp.116, %tmp.118);
+D_Masters_Dissertation_LinearApplication_source_LinearApplicationView_mc_49_4_94_4_stop:
     }
 }
 [ @file = "D:\Masters Dissertation\LinearApplication\source\LinearApplicationView.mc"; @line = 1; ]

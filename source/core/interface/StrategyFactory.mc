@@ -13,7 +13,7 @@ module Jacobs
 {
     class StrategyFactory 
     {
-        // Instane Attributes:
+        // Instance Attributes:
         private var _strategies as Array<Strategy>;
 
 

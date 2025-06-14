@@ -14,12 +14,28 @@ class LinearApplicationView extends WatchUi.WatchFace
     // Instance Attributes:
     private var layoutOrchestrator as LayoutOrchestrator = new LayoutOrchestrator();
     private var _metrics = [new Cadence(), new Pace(), new HeartRate()];
+    private var i = 0;
 
 
     // Constructor:
     function initialize() 
     {
         WatchFace.initialize();
+
+        // Cadence:
+        _metrics[0].range.setMinimum(170);
+        _metrics[0].range.setMaximum(180);
+        _metrics[0].userPriority = 0.2;
+
+        // Pace:
+        _metrics[1].range.setMinimum(5);
+        _metrics[1].range.setMaximum(5.3);
+        _metrics[1].userPriority = 0.2;
+
+        // Heart Rate:
+        _metrics[2].range.setMinimum(160);
+        _metrics[2].range.setMaximum(170);
+        _metrics[2].userPriority = 0.4;
     }
 
 
@@ -41,6 +57,9 @@ class LinearApplicationView extends WatchUi.WatchFace
         var maximumPriority = 0;
         var priority = 0;
         var heuristics = [];
+        var test = new Metrics();
+        activity = test.getInfo(i);
+        i+=1;
 
         // Collect and prioritise metrics
         for (var i = 0; i < _metrics.size(); i++)
